@@ -1,0 +1,362 @@
+@font-face {
+    font-family: courierNew;
+    src: url(assets/Courier\ New\ Bold.ttf);
+}
+
+@font-face {
+    font-family: monument;
+    src: url(assets/MonumentGrotesk-Mono.ttf);
+}
+
+html{
+    font-size: 1rem;
+    overflow: hidden !important;
+    background-color: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    /* color: white; */
+    text-decoration: none;
+}
+
+.cover{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+header, footer{
+    font-family: courierNew;
+    font-size: 2.6rem;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+    position: fixed !important;
+    justify-content: space-between;
+    position: relative;
+    width: 92vw;
+    z-index: 4;
+}
+
+.name, .about{
+    position: relative;
+    width: 7.8rem;
+    height: 2.4rem;
+}
+
+footer{
+    font-size: 1.6rem;
+    bottom: 0;
+}
+
+.s, .i, .bc, .sc{
+    position: relative;
+    width: 9.4rem;
+    height: 1.8rem;
+}
+
+.bigTitle{
+    width: max-content;
+    white-space: nowrap;
+    position: absolute;
+    mix-blend-mode: screen;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.bigTitle.red{
+    color: rgb(255,0,0);
+    left:-0.2em;
+    top:0;
+}
+
+.bigTitle.green{
+    color: rgb(0,255,0);
+    left: 0.1em;
+    top:-0.2em;
+}
+
+.bigTitle.blue{
+    color: rgb(0,0,255);
+    left: 0.2em;;
+    top:0.1em;
+}
+
+.bigTitleContainer:hover .red{
+    transform: translate(0.2em);
+}
+.bigTitleContainer:hover .green{
+    transform: translate(-0.1em, 0.2em);
+}
+.bigTitleContainer:hover .blue{
+    transform: translate(-0.2em, -0.1em);
+}
+
+.subheader{
+    position: fixed;
+    top: 12vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1.6rem;
+    font-family: courierNew;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    z-index: 4;
+}
+
+.back, .next{
+    position: relative;
+    white-space: nowrap;
+    width: 4.8rem;
+    height: 1.8rem;
+}
+
+.smallTitle{
+    white-space: nowrap;
+    position: absolute;
+    mix-blend-mode: screen;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.smallTitle.red{
+    color: rgb(255,0,0);
+    left:-0.07em;
+    top:0;
+}
+
+.smallTitle.green{
+    color: rgb(0,255,0);
+    left: 0.03em;
+    top:-0.07em;
+}
+
+.smallTitle.blue{
+    color: rgb(0,0,255);
+    left: 0.07em;;
+    top:0.03em;
+}
+
+.smallTitleContainer:hover .red{
+    transform: translate(0.07em);
+}
+.smallTitleContainer:hover .green{
+    transform: translate(-0.03em, 0.07em);
+}
+.smallTitleContainer:hover .blue{
+    transform: translate(-0.07em, -0.03em);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.diskContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 6vh;
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
+}
+
+.mid{
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.right{
+    left: 72%;
+    opacity: 45%;
+}
+
+.left{
+    left:-72%;
+    opacity: 45%;
+}
+
+.disk{
+    mix-blend-mode: exclusion;
+    position: absolute;
+    width: 124rem;
+    height: 124rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 124rem;
+    background-color: black;
+}
+
+.disk.red{
+    box-shadow: 0px 0px 40px 4px #F00;
+}
+
+.disk.green{
+    box-shadow: 0px 0px 80px 8px #0F0;
+}
+
+.disk.blue{
+    box-shadow: 0px 0px 100px 16px #00F;
+}
+
+.albumText{
+    font-family: monument;
+    font-size: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-85%);
+    line-height: 1.8rem;
+    text-align: center;
+    z-index: 4;
+}
+
+.albumText a{
+    color: #6A6A6A;
+    display: block;
+}
+
+.selected, .albumTitle{
+    color: white !important;
+}
+
+.selected{
+    cursor: pointer;
+}
+
+.reelvid{
+    position: relative;
+    width: 124rem;
+    height: 124rem;
+    border-radius: 124rem;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.reellayer{
+    width: 124rem;
+    height: 124rem;
+    border-radius: 124rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 120px 120px #000 inset;
+    z-index: 4;
+}
+
+.reelbgvid{
+    /* object-fit: cover; */
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%);
+    z-index: 3;
+    width: 136vw;
+}
+
+.vid{
+    position: relative;
+    left: 50%;
+    bottom: -30%;
+    transform: translate(-50%);
+    width: 52rem;
+    height: 52rem;
+    border-radius: 52rem;
+    overflow: hidden;
+}
+
+.layer{
+    width: 52rem;
+    height: 52rem;
+    border-radius: 52rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 50px #000 inset;
+    z-index: 4;
+}
+
+.vid video{
+    /* object-fit: cover; */
+    position: absolute;
+    left: 50%;
+    /* right: 50%; */
+    transform: translate(-50%);
+    z-index: 3;
+    height: 100vh;
+}
+
+.curvedContainer{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform-origin: center;
+    transform: translate(-50%) rotate(-80deg);
+    width: 116rem;
+    height: 116rem;
+    border-radius: 116rem;
+    color: white;
+    font-family: monument;
+    font-size: 1.6rem;
+}
+
+.animate{
+    animation-name: spin;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from{transform: translate(-50%) rotate(-80deg)}
+    to{transform: translate(-50%) rotate(80deg)}
+}
+
+.curvedTitle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.curvedTitle span {
+    height: 58rem;
+    position: absolute;
+    width: 1.6rem;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+}
+
+
+.blackLayer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.00) 15%, rgba(0, 0, 0, 0.00) 85%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 3;
+}
