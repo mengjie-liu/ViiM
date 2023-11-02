@@ -15,4 +15,13 @@ $(document).ready(function () {
       $(this).hide();
       $(this).siblings(".blackLayer").hide();
     });
+  $("video").on("play", function () {
+    $(this).attr("controls", "");
+  });
+
+  $("video").on("pause", function () {
+    $(this).removeAttr("controls");
+    $(this).siblings(".blackLayer").show();
+    $(this).siblings("svg").show();
+  });
 });
