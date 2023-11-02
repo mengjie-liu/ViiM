@@ -236,6 +236,10 @@ footer{
     border-radius: 1rem;
 }
 
+.vertical{
+    width: 36%;
+}
+
 .vid svg{
     position: absolute;
     left: 50%;
