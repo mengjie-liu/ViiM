@@ -1,11 +1,11 @@
 @font-face {
     font-family: courierNew;
-    src: url(../assets/Courier\ New\ Bold.ttf);
+    src: url(../assets/TestPitch-Semibold.otf);
 }
 
 @font-face {
     font-family: monument;
-    src: url(../assets/MonumentGrotesk-Mono.ttf);
+    src: url(../assets/TestPitch-Semibold.otf);
 }
 
 html{
