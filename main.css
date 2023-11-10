@@ -438,20 +438,20 @@ footer{
     }
     
     .mid{
-        left: -54%;
+        left: -58%;
         top: 50%;
         transform: translate(0, -50%);
         z-index: 2;
     }
     
     .right{
-        left: -54%;
+        left: -58%;
         top: 72%;
         opacity: 45%;
     }
     
     .left{
-        left: -54%;
+        left: -58%;
         top:-72%;
         opacity: 45%;
     }
@@ -461,7 +461,7 @@ footer{
         position: absolute;
         width: 50rem;
         height: 50rem;
-        left: -54%;
+        left: -58%;
         top: 50%;
         transform: translate(0, -50%);
         border-radius: 48rem;
