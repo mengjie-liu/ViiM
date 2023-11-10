@@ -466,14 +466,21 @@ footer{
     }
     
     .disk.red{
-        box-shadow: 0px 0px 40px 4px #F00;
+        box-shadow: 0px 0px 20px 2px #F00;
     }
     
     .disk.green{
-        box-shadow: 0px 0px 80px 8px #0F0;
+        box-shadow: 0px 0px 40px 4px #0F0;
     }
     
     .disk.blue{
-        box-shadow: 0px 0px 100px 16px #00F;
+        box-shadow: 0px 0px 50px 8px #00F;
+    }
+
+    .albumText{
+        transform: translate(-30%,-50%);
+        line-height: 1.8rem;
+        text-align: center;
+        z-index: 4;
     }
 }
