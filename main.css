@@ -440,27 +440,23 @@ footer{
     .mid{
         left: -58%;
         top: 50%;
-        transform: translate(0, -50%);
-        z-index: 2;
     }
     
     .right{
         left: -58%;
-        top: 72%;
-        opacity: 45%;
+        top: 80%;
     }
     
     .left{
         left: -58%;
-        top:-72%;
-        opacity: 45%;
+        top: -80%;
     }
 
     .disk{
         mix-blend-mode: exclusion;
         position: absolute;
-        width: 50rem;
-        height: 50rem;
+        width: 48rem;
+        height: 48rem;
         left: -58%;
         top: 50%;
         transform: translate(0, -50%);
