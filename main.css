@@ -389,7 +389,10 @@ footer{
     footer{
         font-size: 1rem;
         bottom: 0;
-        flex-flow: row wrap;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* height: 240px; */
+        align-content: flex-start;
     }
     
     .s, .i, .bc, .sc{
