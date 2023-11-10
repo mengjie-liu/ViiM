@@ -367,7 +367,7 @@ footer{
 @media only screen and (max-width: 768px) {
     header, footer{
         font-family: courierNew;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 3vh;
         padding-bottom: 3vh;
         padding-left: 5vw;
@@ -382,18 +382,23 @@ footer{
     
     .name, .about{
         position: relative;
-        width: 6rem;
+        width: 4rem;
         height: 2.4rem;
     }
     
     footer{
         font-size: 1rem;
         bottom: 0;
+        flex-flow: row wrap;
     }
     
     .s, .i, .bc, .sc{
         position: relative;
         width: 6rem;
         height: 1.8rem;
+    }
+
+    .s, .i, .bc{
+        flex-grow:2;
     }
 }
