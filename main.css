@@ -440,6 +440,7 @@ footer{
     .mid{
         left: -58%;
         top: 50%;
+        transform: translate(0, -50%);
     }
     
     .right{
