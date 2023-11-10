@@ -368,8 +368,8 @@ footer{
     header, footer{
         font-family: courierNew;
         font-size: 1.5rem;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
         padding-left: 5vw;
         padding-right: 5vw;
         display: flex;
@@ -389,19 +389,39 @@ footer{
     footer{
         font-size: 1rem;
         bottom: 0;
-        flex-direction: column;
+        /* flex-direction: column;
         flex-wrap: wrap;
-        /* height: 240px; */
-        align-content: flex-start;
+        align-content: flex-start; */
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        grid-template-rows: 1rem 1rem;
+        /* grid-template-columns: 2rem 2rem; */
+        /* padding: 10px; */
     }
     
     .s, .i, .bc, .sc{
         position: relative;
-        width: 6rem;
-        height: 1.8rem;
+        width: 6.4rem;
+        height: auto;
     }
 
-    .s, .i, .bc{
-        flex-grow:2;
+    .i, .sc{
+        text-align: right;
+    }
+
+    .subheader{
+        position: fixed;
+        top: 6vh;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        font-size: 1rem;
+        font-family: courierNew;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        z-index: 4;
     }
 }
