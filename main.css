@@ -382,7 +382,7 @@ footer{
     
     .name, .about{
         position: relative;
-        width: 4rem;
+        width: 4.4rem;
         height: 2.4rem;
     }
     
@@ -396,6 +396,7 @@ footer{
         grid-auto-flow: column;
         grid-gap: 1rem;
         grid-template-rows: 1rem 1rem;
+        justify-content: space-between;
         /* grid-template-columns: 2rem 2rem; */
         /* padding: 10px; */
     }
@@ -423,5 +424,59 @@ footer{
         padding-left: 4vw;
         padding-right: 4vw;
         z-index: 4;
+    }
+
+    .back, .next{
+        position: relative;
+        white-space: nowrap;
+        width: 3.4rem;
+        height: 1.8rem;
+    }
+
+    .diskContainer{
+        padding-top: 0;
+    }
+    
+    .mid{
+        left: -32%;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 2;
+    }
+    
+    .right{
+        left: -32%;
+        top: 72%;
+        opacity: 45%;
+    }
+    
+    .left{
+        left: -32%;
+        top:-72%;
+        opacity: 45%;
+    }
+
+    .disk{
+        mix-blend-mode: exclusion;
+        position: absolute;
+        width: 50rem;
+        height: 50rem;
+        left: -32%;
+        top: 50%;
+        transform: translate(0, -50%);
+        border-radius: 48rem;
+        background-color: black;
+    }
+    
+    .disk.red{
+        box-shadow: 0px 0px 40px 4px #F00;
+    }
+    
+    .disk.green{
+        box-shadow: 0px 0px 80px 8px #0F0;
+    }
+    
+    .disk.blue{
+        box-shadow: 0px 0px 100px 16px #00F;
     }
 }
