@@ -30,14 +30,25 @@ a{
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     z-index: 5;
+    cursor: pointer;
 }
 
-svg{
+/* svg{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+} */
+
+.cover div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: courierNew;
+    font-size: 1.6rem;
 }
 
 header, footer{
@@ -365,6 +376,10 @@ footer{
 
 /* mobile */
 @media only screen and (max-width: 768px) {
+    .cover div{
+        font-size: 1rem;
+    }
+    
     header, footer{
         font-family: courierNew;
         font-size: 1.5rem;
