@@ -533,25 +533,36 @@ footer{
         width: 72rem;
     }
 
-    .vid{
+    .vid {
         position: relative;
-        left: -60%;
+        left: 0;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(0, -50%);
+        width: 28rem;
+        height: 28rem;
+        border-radius: 28rem;
+    }
+    
+    .layer{
         width: 32rem;
         height: 32rem;
         border-radius: 32rem;
-    }
-    
-    /* .layer{
-        width: 52rem;
-        height: 52rem;
-        border-radius: 52rem;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0px 0px 50px 50px #000 inset;
         z-index: 4;
-    } */
+    }
+
+    .vid video {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 70vh;
+    }
+
+    .curvedContainer{
+        visibility: hidden;
+    }
 }
