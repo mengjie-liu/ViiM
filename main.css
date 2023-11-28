@@ -493,7 +493,7 @@ footer{
     }
 
     .albumText{
-        font-size: 1rem;
+        font-size: 0.8rem;
         transform: translate(64%,-50%);
         line-height: 1.8rem;
         text-align: center;
