@@ -264,3 +264,80 @@ footer{
     height: 100%;
     background: rgba(0, 0, 0, 0.35);
 }
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .cover div{
+        font-size: 1rem;
+    }
+    
+    header, footer{
+        font-family: courierNew;
+        font-size: 1.5rem;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: flex;
+        position: fixed !important;
+        justify-content: space-between;
+        position: relative;
+        width: 90vw;
+        z-index: 4;
+    }
+    
+    .name, .about{
+        position: relative;
+        width: 4.4rem;
+        height: 2.4rem;
+    }
+    
+    footer{
+        font-size: 1rem;
+        bottom: 0;
+        /* flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start; */
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        grid-template-rows: 1rem 1rem;
+        justify-content: space-between;
+        /* grid-template-columns: 2rem 2rem; */
+        /* padding: 10px; */
+    }
+    
+    .s, .i, .bc, .sc{
+        position: relative;
+        width: 6.4rem;
+        height: auto;
+    }
+
+    .i, .sc{
+        text-align: right;
+    }
+
+    .subheader{
+        position: fixed;
+        top: 6vh;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        font-size: 1rem;
+        font-family: courierNew;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        z-index: 4;
+    }
+
+    .back, .next{
+        position: relative;
+        white-space: nowrap;
+        width: 3.4rem;
+        height: 1.8rem;
+    }
+
+    
+}
