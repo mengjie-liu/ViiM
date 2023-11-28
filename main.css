@@ -544,9 +544,9 @@ footer{
     }
     
     .layer{
-        width: 32rem;
-        height: 32rem;
-        border-radius: 32rem;
+        width: 28rem;
+        height: 28rem;
+        border-radius: 28rem;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -559,7 +559,7 @@ footer{
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        height: 70vh;
+        height: 64vh;
     }
 
     .curvedContainer{
