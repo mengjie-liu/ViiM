@@ -347,8 +347,8 @@ footer{
 }
 
 @keyframes spin {
-    from{transform: translate(-50%) rotate(-80deg)}
-    to{transform: translate(-50%) rotate(80deg)}
+    from{transform: translate(-50%) rotate(-72deg)}
+    to{transform: translate(-50%) rotate(72deg)}
 }
 
 .curvedTitle{
