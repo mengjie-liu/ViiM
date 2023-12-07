@@ -386,6 +386,58 @@ footer{
     z-index: 3;
 }
 
+/* pad */
+@media only screen and (min-width: 768px) and (max-width: 1280) and (orientation:landscape){
+    .disk{
+        mix-blend-mode: exclusion;
+        position: absolute;
+        width: 102rem;
+        height: 102rem;
+        left: -58%;
+        top: 50%;
+        transform: translate(0, -50%);
+        border-radius: 48rem;
+        background-color: black;
+    }
+
+    .reelvid{
+        width: 102rem;
+        height: 102rem;
+        border-radius: 102rem;
+    }
+    
+    .reellayer{
+        width: 102rem;
+        height: 102rem;
+        border-radius: 102rem;
+    }
+    
+    .reelbgvid{
+        width: 120vw;
+    }
+    
+    .vid{
+        width: 44rem;
+        height: 44rem;
+        border-radius: 44rem;
+    }
+    
+    .layer{
+        width: 44rem;
+        height: 44rem;
+        border-radius: 44rem;
+    }
+    
+    .curvedContainer{
+        width: 96rem;
+        height: 96rem;
+        border-radius: 96rem;
+    }
+    
+    .curvedTitle span {
+        height: 44rem;
+    }
+}
 
 
 /* mobile */
@@ -395,16 +447,11 @@ footer{
     }
     
     header, footer{
-        font-family: courierNew;
         font-size: 1.5rem;
         padding-top: 2vh;
         padding-bottom: 4vh;
         padding-left: 5vw;
         padding-right: 5vw;
-        display: flex;
-        position: fixed !important;
-        justify-content: space-between;
-        position: relative;
         width: 90vw;
         z-index: 4;
     }
