@@ -118,12 +118,15 @@ footer{
 
 .bigTitleContainer:hover .red{
     transform: translate(0.1em);
+    -webkit-transform:translate(0.1em);
 }
 .bigTitleContainer:hover .green{
     transform: translate(-0.05em, 0.1em);
+    -webkit-transform: translate(-0.05em, 0.1em);
 }
 .bigTitleContainer:hover .blue{
     transform: translate(-0.1em, -0.05em);
+    -webkit-transform: translate(-0.1em, -0.05em);
 }
 
 .subheader{
@@ -176,12 +179,15 @@ footer{
 
 .smallTitleContainer:hover .red{
     transform: translate(0.07em);
+    -webkit-transform: translate(0.07em);
 }
 .smallTitleContainer:hover .green{
     transform: translate(-0.03em, 0.07em);
+    -webkit-transform: translate(-0.03em, 0.07em);
 }
 .smallTitleContainer:hover .blue{
     transform: translate(-0.07em, -0.03em);
+    -webkit-transform: translate(-0.07em, -0.03em);
 }
 
 .hidden{
@@ -194,7 +200,9 @@ footer{
     height: 100%;
     padding-top: 6vh;
     transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
     transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
 }
 
 .mid{
