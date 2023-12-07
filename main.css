@@ -387,52 +387,120 @@ footer{
 }
 
 /* pad */
-@media only screen and (min-width: 768px) and (max-width: 1280) and (orientation:landscape){
+@media screen and (min-width: 768px) and (max-width: 1280px) and (orientation:landscape){
+    .cover div{
+        font-size: 1.2rem;
+    }
+    
+    header, footer{
+        font-size: 1.8rem;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        width: 90vw;
+        z-index: 4;
+    }
+    
+    .name, .about{
+        position: relative;
+        width: 4.4rem;
+        height: 2.4rem;
+    }
+    
+    footer{
+        font-size: 1.2rem;
+    }
+    
+    .s, .i, .bc, .sc{
+        position: relative;
+        width: 6.4rem;
+        height: auto;
+    }
+
+    .i, .sc{
+        text-align: right;
+    }
+
+    .subheader{
+        position: fixed;
+        top: 6vh;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        font-size: 1.2rem;
+        font-family: courierNew;
+        padding-top: 6vh;
+        padding-bottom: 4vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        z-index: 4;
+    }
+
+    .back, .next{
+        position: relative;
+        white-space: nowrap;
+        width: 3.4rem;
+        height: 1.8rem;
+    }
+
+    
+    .diskContainer{
+        padding-top: 10vh;
+    }
+    
     .disk{
         mix-blend-mode: exclusion;
         position: absolute;
-        width: 96rem;
-        height: 96rem;
-        border-radius: 48rem;
+        width: 80rem;
+        height: 80rem;
+        border-radius: 40rem;
         background-color: black;
     }
 
     .reelvid{
-        width: 96rem;
-        height: 96rem;
-        border-radius: 96rem;
+        width: 80rem;
+        height: 80rem;
+        border-radius: 80rem;
     }
     
     .reellayer{
-        width: 96rem;
-        height: 96rem;
-        border-radius: 96rem;
+        width: 80rem;
+        height: 80rem;
+        border-radius: 80rem;
     }
     
     .reelbgvid{
+        top: 5%;
         width: 112vw;
     }
     
     .vid{
-        width: 40rem;
-        height: 40rem;
-        border-radius: 40rem;
+        width: 32rem;
+        height: 32rem;
+        border-radius: 32rem;
     }
     
     .layer{
-        width: 40rem;
-        height: 40rem;
-        border-radius: 40rem;
+        width: 32rem;
+        height: 32rem;
+        border-radius: 32rem;
     }
     
+    .albumText{
+        transform: translate(-50%,-75%);
+    }
+
     .curvedContainer{
-        width: 88rem;
-        height: 88rem;
-        border-radius: 88rem;
+        width: 76rem;
+        height: 76rem;
+        border-radius: 76rem;
+        font-size: 1rem;
+        top: 13%;
     }
     
     .curvedTitle span {
-        height: 40rem;
+        height: 32rem;
     }
 }
 
