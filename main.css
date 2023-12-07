@@ -391,51 +391,48 @@ footer{
     .disk{
         mix-blend-mode: exclusion;
         position: absolute;
-        width: 102rem;
-        height: 102rem;
-        left: -58%;
-        top: 50%;
-        transform: translate(0, -50%);
+        width: 96rem;
+        height: 96rem;
         border-radius: 48rem;
         background-color: black;
     }
 
     .reelvid{
-        width: 102rem;
-        height: 102rem;
-        border-radius: 102rem;
-    }
-    
-    .reellayer{
-        width: 102rem;
-        height: 102rem;
-        border-radius: 102rem;
-    }
-    
-    .reelbgvid{
-        width: 120vw;
-    }
-    
-    .vid{
-        width: 44rem;
-        height: 44rem;
-        border-radius: 44rem;
-    }
-    
-    .layer{
-        width: 44rem;
-        height: 44rem;
-        border-radius: 44rem;
-    }
-    
-    .curvedContainer{
         width: 96rem;
         height: 96rem;
         border-radius: 96rem;
     }
     
+    .reellayer{
+        width: 96rem;
+        height: 96rem;
+        border-radius: 96rem;
+    }
+    
+    .reelbgvid{
+        width: 112vw;
+    }
+    
+    .vid{
+        width: 40rem;
+        height: 40rem;
+        border-radius: 40rem;
+    }
+    
+    .layer{
+        width: 40rem;
+        height: 40rem;
+        border-radius: 40rem;
+    }
+    
+    .curvedContainer{
+        width: 88rem;
+        height: 88rem;
+        border-radius: 88rem;
+    }
+    
     .curvedTitle span {
-        height: 44rem;
+        height: 40rem;
     }
 }
 
