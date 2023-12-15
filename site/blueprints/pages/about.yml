@@ -1,0 +1,19 @@
+title: about
+
+columns:
+  - width: 1/2
+    sections:
+      info:
+        type: fields
+        fields:
+          description:
+            type: textarea
+
+  - width: 1/2
+    sections:
+      images:
+        type: files
+        layout: cards
+        image:
+          ratio: 3/2
+          cover: true
